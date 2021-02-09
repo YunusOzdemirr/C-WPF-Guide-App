@@ -1,0 +1,31 @@
+﻿<Window x:Class="_1051.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_1051"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="825" WindowState="Maximized">
+    <Grid>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel >
+            <Button x:Name="ImgKişiler"  VerticalAlignment="Top">
+                <Image Source="Image/Kişiler.png" Cursor="Hand"/>
+            </Button>
+            <Button x:Name="ImgKişiEkle"  VerticalAlignment="Top">
+                <Image Source="Image/KişiEkle.png" Cursor="Hand" />
+            </Button>
+            <Button x:Name="ImgGrupEkle"  VerticalAlignment="Top">
+                <Image Source="Image/GrupEkle.png" Cursor="Hand"/>
+            </Button>
+        </StackPanel>
+
+        <Frame x:Name="Frm" Grid.Column="1" Source="/1051;component/Views/Kişiler.xaml" NavigationUIVisibility="Hidden"   />
+
+    </Grid>
+</Window>

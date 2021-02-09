@@ -1,0 +1,20 @@
+﻿<Page x:Class="_1051.Views.GrupEkle"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:_1051.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="GrupEkle">
+
+    <Grid>
+        <StackPanel Margin="15" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Grup Adı:" Margin="5"/>
+                <TextBox x:Name="TbGrupAdı" Margin="5" Width="200"/>
+            </StackPanel>
+            <Button x:Name="BtnGrupKaydet" Content="Kaydet" Width="200" Margin="5" HorizontalAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</Page>
